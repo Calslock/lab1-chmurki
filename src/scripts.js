@@ -1,15 +1,10 @@
 fields = ["#lb", "#ny", "#sd"];
+timezones = ["Europe/Warsaw", "America/New_York", "Australia/Sydney"];
 
 function getTime(){
-    $.ajax({
-        url: 'time.php',
-        success: function(data){
-            var timedata = data.slice(0, -1);
-            timedata = timedata.split('!');
-            for (i in fields){
-                $(fields[i]).html(timedata[i]);
-            }
-        }
-    })
+    var time;
+    for(i in fields){
+        $(fields[i]).html(luxon.DateTime.local().setZone(timezones[i]).setLocale('pl').toFormat("HH:mm:ss, dd LLL yyyy"));
+    }
     setTimeout(getTime, 500);
 }
