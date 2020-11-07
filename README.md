@@ -5,7 +5,7 @@ Web app showing times for different timezones. Image based on [nimmis/alpine-apa
 Pull repository and run `docker build -t calslock/lab1-chmurki .` in repo main directory.
 
 # Running image
-`docker run -d -p your_port:80 --name your_name calslock/lab-chmurki`
+`docker run -d -p your_port:80 --name your_name calslock/lab1-chmurki`
 
 # Running app
 App is available on `localhost:your_port`
