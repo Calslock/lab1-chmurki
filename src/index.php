@@ -19,7 +19,7 @@
     <tr>
         <td id="tt">Sydney</td>
         <td id="sd"></td>
-    <tr>
+    </tr>
 </table>
 </div>
 </body>
