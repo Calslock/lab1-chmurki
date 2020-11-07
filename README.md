@@ -11,4 +11,4 @@ Clone repository and run `docker build -t calslock/lab1-chmurki .` in repo main 
 App is available on `localhost:your_port`
 
 # Additional information
-**Only after initial build** - At first time Apache loads configuration files from alpine-apache image - for this reason app will is available under `localhost` after few minutes after initial docker run.
+**Only after initial build** - At first time Apache loads configuration files from alpine-apache image - for this reason app is available under `localhost` after few minutes after initial docker run.
